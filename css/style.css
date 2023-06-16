@@ -4,5 +4,6 @@
 
 
 body {
-    min-width: 360px; /* минимальная ширина экрана 360px */
+    min-width: 360px; /* минимальная ширина экрана 360px */;
+    background-color: #1E2020;
 }
