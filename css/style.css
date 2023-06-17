@@ -1,9 +1,53 @@
 /* Шрифты */
+@import url('MullerBoldItalic.woff2') ;
 @import url('');
-@import url('');
+
+:root {
+    --back-ground: #1E2020;
+    --text-color: #0D192A;
+    --hover-link: #5092ee;
+    --ligth-btn-color: #fff;
+}
 
 
 body {
-    min-width: 360px; /* минимальная ширина экрана 360px */;
-    background-color: #1E2020;
+    min-width: 360px;
+    /* минимальная ширина экрана 360px */
+    ;
+    background-color: var(--back-ground);
+}
+
+.navbar {
+    background-color: transparent;
+}
+header {
+    margin-top: 16px;
+    height: 100px;
+}
+
+.navbar-nav a {
+    color: white;
+}
+
+.navbar-nav a:hover {
+    color: var(--hover-link);
+}
+
+.up_balance__link {
+    font-family: 'Muller-Trial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--text-color);
+    background-color: var(--ligth-btn-color);
+    padding: 16px 32px;
+    border-radius: 155px;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+.up_balance__link:hover {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color: var(--ligth-btn-color)
 }
