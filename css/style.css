@@ -1,5 +1,5 @@
 /* Шрифты */
-@import url('MullerBoldItalic.woff2') ;
+@import url('MullerBoldItalic.woff2');
 @import url('');
 
 :root {
@@ -7,6 +7,8 @@
     --text-color: #0D192A;
     --hover-link: #5092ee;
     --ligth-btn-color: #fff;
+
+    --wa-bgcolor: #43d854;
 }
 
 
@@ -19,7 +21,9 @@ body {
 
 .navbar {
     background-color: transparent;
+    padding-left: 53px;
 }
+
 header {
     margin-top: 16px;
     height: 100px;
@@ -31,6 +35,11 @@ header {
 
 .navbar-nav a:hover {
     color: var(--hover-link);
+}
+
+.up_balance {
+    margin-left: 40px;
+    margin-right: 260px;
 }
 
 .up_balance__link {
@@ -46,8 +55,123 @@ header {
     text-decoration: none;
     border: 1px solid transparent;
 }
+
 .up_balance__link:hover {
     background-color: transparent;
     border: 1px solid #FFFFFF;
     color: var(--ligth-btn-color)
+}
+
+.header_btnsocials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header_btnsocials a {
+    font-family: 'Muller-Trial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--ligth-btn-color);
+    background-color: transparent;
+    padding: 16px 32px;
+    border-radius: 155px;
+    text-decoration: none;
+    border: 1px solid #FFFFFF;
+}
+
+.header_btnsocials a:hover {
+    background-color: var(--wa-bgcolor);
+    border: 1px solid var(--back-ground);
+    color: var(--ligth-btn-color)
+}
+
+.main_infocontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    position: relative;
+    background: #1B3F5A;
+    border: 2px solid rgba(218, 218, 218, 0.15);
+    box-shadow: 0px 4px 87px -25px rgba(0, 0, 0, 0.15);
+    border-radius: 34px;
+    padding-top: 60px;
+    padding-right: 0;
+    padding-bottom: 35px;
+    padding-left: 53px;
+}
+
+.main_breadcrumb {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: rgba(254, 159, 67, 0.5);
+}
+
+.main_offer {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 110%;
+    color: #FFFFFF;
+    max-width: 431px;
+}
+
+.main_offerbtn {
+    text-decoration: none;
+    background: #FFFFFF;
+    border-radius: 136px;
+    color: var(--text-color);
+    display: inline-block;
+    padding: 20px 40px;
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    border: 1px solid transparent;
+}
+
+.main_offerbtn:hover {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color: var(--ligth-btn-color)
+}
+
+.main_imgcontainer {
+    position: absolute;
+    top: -10px;
+    right: -50px;
+}
+
+/* Тизеры */
+
+.tizers_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.tizers__title {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: var(--ligth-btn-color)
+}
+
+.tizers_info {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: var(--ligth-btn-color);
+    opacity: 0.5;
 }
